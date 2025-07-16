@@ -382,7 +382,7 @@ export default class MonitorScreen extends EventEmitter {
      * @param maxOffset the maximum offset of the texture layers
      */
     createEnclosingPlanes(maxOffset: number) {
-        // Create planes, lots of boiler plate code here because I'm lazy
+        // Create planes with predefined configurations
         const planes = {
             left: {
                 size: new THREE.Vector2(maxOffset, this.screenSize.height),

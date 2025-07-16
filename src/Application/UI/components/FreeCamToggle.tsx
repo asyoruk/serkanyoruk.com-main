@@ -7,9 +7,9 @@ import camera from '../../../../static/textures/UI/camera.svg';
 // @ts-ignore
 import mouse from '../../../../static/textures/UI/mouse.svg';
 
-interface MuteToggleProps {}
+interface FreeCamToggleProps {}
 
-const MuteToggle: React.FC<MuteToggleProps> = ({}) => {
+const FreeCamToggle: React.FC<FreeCamToggleProps> = ({}) => {
     const [isHovering, setIsHovering] = useState(false);
     const [isActive, setIsActive] = useState(false);
     const [freeCamActive, setFreeCamActive] = useState(false);
@@ -89,7 +89,7 @@ const MuteToggle: React.FC<MuteToggleProps> = ({}) => {
                             : { fontSize: 10 }
                     }
                 >
-                    Free Cam Enabled
+                    Free Camera Enabled
                 </p>
             </motion.div> */}
         </div>
@@ -163,4 +163,4 @@ const styles: StyleSheetCSS = {
     },
 };
 
-export default MuteToggle;
+export default FreeCamToggle;
