@@ -201,7 +201,9 @@ export default class MonitorScreen extends EventEmitter {
             iframe.src = 'http://localhost:3000/';
         } else {
             // PROD - Use production URL
-            iframe.src = 'https://os.serkanyoruk.com/';
+            //iframe.src = 'https://os.serkanyoruk.com/';
+            iframe.src = 'https://os-serkanyoruk-com-main-bice.vercel.app/';  
+            // TODO VERCEL URL : After purchasing the domain, change the url to the https://os.serkanyoruk.com url
         }
         iframe.style.width = this.screenSize.width + 'px';
         iframe.style.height = this.screenSize.height + 'px';
